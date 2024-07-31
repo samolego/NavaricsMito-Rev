@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/video0_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:layout_alignParentRight="true" android:onClick="toSearch"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="连接" android:layout_alignParentRight="true" android:onClick="toLink"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:text="Rc" android:layout_alignParentRight="true" android:onClick="toGetRc"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:text="Dev" android:layout_alignParentRight="true" android:onClick="toGetDev"/>
+    <TextView android:textColor="#1c86ee" android:id="@+id/txt_sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sn"/>
+    <TextView android:textColor="#1c86ee" android:id="@+id/txt_dev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="sn"/>
+    <TextView android:textColor="#1c86ee" android:id="@+id/txt_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:text="info"/>
+</RelativeLayout>

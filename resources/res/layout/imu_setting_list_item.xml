@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivImuItemImg" android:layout_width="47dp" android:layout_height="47dp" android:src="@drawable/setting_gyroscope" android:layout_centerVertical="true" android:layout_marginStart="60dp" android:layout_alignParentStart="true"/>
+    <TextView android:id="@+id/ivItemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gyroscope" android:layout_centerVertical="true" android:layout_marginStart="14dp" android:layout_toEndOf="@+id/ivImuItemImg"/>
+    <Button android:textSize="12sp" android:textColor="@drawable/imu_setting_list_item_btn_text_bg" android:id="@+id/btnCalirate" android:background="@drawable/imu_setting_btn_bg" android:layout_width="95dp" android:layout_height="29dp" android:text="@string/calibrate" android:layout_centerVertical="true" android:layout_marginEnd="60dp" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="55dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/btnCalirate">
+        <ImageView android:id="@+id/ivItemStatus" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/imu_item_status_error"/>
+        <ImageView android:id="@+id/ivItemStatusInterference" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/imu_item_status_interference" android:layout_marginStart="9dp"/>
+    </LinearLayout>
+</RelativeLayout>

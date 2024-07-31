@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="toHiddenView">
+        <SurfaceView android:id="@+id/video0_surface" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/Car_Start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开车启动" android:onClick="toClick"/>
+            <Button android:id="@+id/Car_Close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开车停止" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_record" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录像" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_record_stop" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="P" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:onClick="toClick"/>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/keymap_http" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keymap下载" android:onClick="toClick"/>
+            <Button android:id="@+id/keymap_car" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Car" android:onClick="toClick"/>
+            <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/txt_car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/txt_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            <TextView android:textSize="20dp" android:textColor="#ffffff" android:id="@+id/txt_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/txt_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

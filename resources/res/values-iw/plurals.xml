@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">שעה אחת</item>
+        <item quantity="other">%d שעות</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">דקה אחת</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">שנייה אחת</item>
+        <item quantity="other">%d שניות</item>
+    </plurals>
+</resources>

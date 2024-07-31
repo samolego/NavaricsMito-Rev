@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="error_code">
+        <item>0*00</item>
+        <item>0*01</item>
+        <item>0*02</item>
+        <item>0*03</item>
+        <item>0*04</item>
+        <item>0*05</item>
+        <item>0*06</item>
+        <item>0*07</item>
+        <item>0*08</item>
+        <item>0*09</item>
+        <item>0*0A</item>
+        <item>0*0B</item>
+        <item>0*0C</item>
+        <item>0*0D</item>
+        <item>0*0E</item>
+        <item>0*0F</item>
+        <item>0*10</item>
+        <item>0*11</item>
+        <item>0*12</item>
+        <item>0*EE</item>
+    </array>
+    <array name="error_text">
+        <item />
+        <item>CRC 错误</item>
+        <item>未知的子命令</item>
+        <item>未知的操作码</item>
+        <item>未使用uid登录</item>
+        <item>uid为空</item>
+        <item>uid已存在，写入失败</item>
+        <item>as id错误</item>
+        <item>as id为空</item>
+        <item>数据长度错误</item>
+        <item>uid错误</item>
+        <item>SN为空</item>
+        <item>重复登陆</item>
+        <item>SN 错误</item>
+        <item>此命令的操作码不支持</item>
+        <item>Own_id检测错误</item>
+        <item>sn检测错误</item>
+        <item>assecc检测出错</item>
+        <item>未登陆</item>
+        <item>未知错误</item>
+    </array>
+    <array name="request_name">
+        <item>开始录像</item>
+        <item>停止录像</item>
+        <item>拍照</item>
+        <item>获取相机模式</item>
+        <item>设置拍照模式</item>
+        <item>设置录像模式</item>
+        <item>获取分辨率</item>
+        <item>获取帧率</item>
+        <item>获取畸变矫正</item>
+        <item>获取SD信息</item>
+        <item>获取曝光模式</item>
+        <item>获取EV值</item>
+        <item>获取快门速度</item>
+        <item>获取ISO</item>
+        <item>获取WB模式</item>
+        <item>获取WB值</item>
+        <item>设置分辨率</item>
+        <item>设置帧率</item>
+        <item>设置畸变矫正</item>
+        <item>设置EV值</item>
+        <item>设置曝光模式</item>
+        <item>设置ISO</item>
+        <item>设置快门速度</item>
+        <item>设置WB值</item>
+        <item>设置WB模式</item>
+    </array>
+</resources>

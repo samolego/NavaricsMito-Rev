@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/cameraParamSDPanel" android:background="@color/transparant20" android:layout_width="251dp" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/sdUsageProgress" android:layout_width="120dp" android:layout_height="8dp" android:layout_marginTop="23dp" android:max="100" android:progress="20" android:progressDrawable="@drawable/progressbar_sd_usage" android:layout_marginEnd="38dp" android:layout_alignParentEnd="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvSDUsage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/sdUsageProgress" android:layout_alignStart="@+id/sdUsageProgress"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tvSDTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_below="@+id/tvSDUsage" android:layout_alignStart="@+id/sdUsageProgress"/>
+</RelativeLayout>

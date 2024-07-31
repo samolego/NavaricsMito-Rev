@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="always_notify_search_result">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="controller_auto_login">true</bool>
+    <bool name="controller_bind_result">false</bool>
+    <bool name="enable_auth">true</bool>
+    <bool name="enable_auto_connect">true</bool>
+    <bool name="enable_simulate_sensethink_api">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="roller_auto_login">true</bool>
+    <bool name="roller_bind_result">false</bool>
+    <bool name="use_testing_server">false</bool>
+</resources>

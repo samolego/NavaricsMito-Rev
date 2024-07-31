@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivUsrImg" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:src="@drawable/usr_icon" android:layout_marginStart="8dp"/>
+    <ImageView android:id="@+id/ivTitleIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/mito_title" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/ivSetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/dp_9" android:src="@drawable/homepage_setting" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:id="@+id/selectorContainer" android:background="@drawable/homepage_bottom_container_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_robot_selected" android:layout_marginStart="32dp"/>
+        <ImageView android:id="@+id/ivMediaLibraryIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_media_normal" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/ivDiveLogIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_divelog_normal" android:layout_marginEnd="32dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/connContainer" android:layout_width="match_parent" android:layout_height="187dp" android:layout_above="@+id/selectorContainer">
+        <TextView android:textSize="12sp" android:textColor="#80000000" android:id="@+id/tvConnSignal" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:text="@string/connected" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="16sp" android:gravity="center" android:id="@+id/btnConnect" android:background="@drawable/homepage_conn_btn_bg_connected" android:layout_width="199dp" android:layout_height="42dp" android:text="@string/start_diving" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/ivRobotImg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="56dp" android:src="@drawable/homepage_mito_connected" android:scaleType="centerCrop" android:layout_above="@+id/connContainer"/>
+</RelativeLayout>

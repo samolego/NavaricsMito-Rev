@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="68dp">
+        <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/settings_back" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/ivTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/controller_mode" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_mode1" android:background="@drawable/settings_item_bg" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/iv_select1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:src="@drawable/keymap_o" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="51dp" android:text="@string/mode1" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_mode1_more" android:background="@drawable/keymap_dian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_mode2" android:background="@drawable/settings_item_bg" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/iv_select2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:src="@drawable/keymap_o" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="51dp" android:text="@string/mode2" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_mode2_more" android:background="@drawable/keymap_dian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_mode3" android:background="@drawable/settings_item_bg" android:layout_width="match_parent" android:layout_height="66dp" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/iv_select3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:src="@drawable/keymap_o" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/color_000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="51dp" android:text="@string/mode3" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/tv_mode3_more" android:background="@drawable/keymap_dian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

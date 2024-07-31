@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="56" android:versionName="0.4.0" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.navatics.app" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-feature android:name="android.hardware.location.network"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.MESTORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.navatics.app.NavaticsApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="true" android:extractNativeLibs="false" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.TestFirmwareUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.navatics.app.activities.test.AuthActivity"/>
+        <activity android:label="@string/app_name" android:name="com.navatics.app.wxapi.WXEntryActivity" android:exported="true"/>
+        <activity android:theme="@style/PreferenceFixTheme.Light.NoActionBar" android:name="com.navatics.app.activities.PreviewActivityV2" android:launchMode="singleTop" android:screenOrientation="landscape"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.VideoPlayerActivity" android:screenOrientation="user"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.MediaLibraryActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboard"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.PhotoViewer" android:screenOrientation="user" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.TestOpenGLActivity" android:screenOrientation="user"/>
+        <activity android:theme="@style/NoAnimationTheme" android:name="com.navatics.app.activities.PhotoEditor" android:screenOrientation="user"/>
+        <activity android:theme="@style/DiveLogActivityTheme" android:name="com.navatics.app.activities.DiveLogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.navatics.app.activities.PickImageActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.TestDiveLogActivity"/>
+        <activity android:name="com.navatics.app.activities.TestDownloadActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.TestViewPagerActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.LoginActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.ForgetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.ResetPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.CreateAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.VerificationCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.UserInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.HomepageActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/NoAnimationTheme" android:name="com.navatics.app.activities.DiveLogHomeActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.AddDiveNoteActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity android:theme="@style/NoTitleFullscreen" android:name="com.navatics.app.activities.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.GuideActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.DeviceNotAllowedActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.SearchDeviceActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.TestSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.TestNumberPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.BindRemoteActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.BindRobotActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.ScanQRCodeActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TestScan" android:name="com.navatics.app.activities.TestScanActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.ActivationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DeveloperSetting" android:name="com.navatics.app.developer.DeveloperSettingActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.ActivationCodeInputActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.TestNewDivelogUIActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.CmdTestActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.CmdDetailTestActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.CmdTestMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.Settings" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.UnbindActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.DebugSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.SystemInformationActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.test.UnbindActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.PitchControlDebugSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.KeymapTestingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.ControllerModeActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.activities.HandShankActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.navatics.app.settings.FirmwareUpdateActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.navatics.app.player.services.MediaPlayerService"/>
+        <provider android:name="com.navatics.app.framework.provider.DiveLogProvider" android:exported="true" android:authorities="com.navatics.app.divelog"/>
+        <provider android:name="com.navatics.app.framework.provider.PhotosProvider" android:exported="true" android:authorities="com.navatics.app.media"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="com.facebook.app.FacebookContentProvider1059281447602657"/>
+        <activity android:name="com.senseplay.sdk.activity.SPWebActivity" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.senseplay.sdk.zxing.CaptureActivity" android:screenOrientation="landscape" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.senseplay.control.ControlService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.senseplay.control.ControlService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.senseplay.mframe.ota.OtaReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.support.p008v4.content.FileProvider" android:exported="false" android:authorities="com.navatics.app.fileprovidercompat" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_path"/>
+        </provider>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.navatics.app.FacebookInitProvider"/>
+        <receiver android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.facebook.CampaignTrackingReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.GalleryActivity"/>
+        <activity android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:exported="false" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="screenSize|orientation"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

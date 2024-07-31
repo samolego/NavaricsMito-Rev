@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="toHiddenView">
+            <com.senseplay.sdk.video.VideoSurface android:id="@+id/video0_surface" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/usb_button" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Usb" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_8020_open" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8020开" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_8020_close" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8020关" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_play" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放" android:onClick="toClick"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_switch_3288" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Switch 3288" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_switch_8020" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Switch 8020" android:onClick="toClick"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="center" android:id="@+id/edt_vibrate" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <Button android:id="@+id/btn_Vibration0" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vibration_id0" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_Vibration1" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vibration_id1" android:onClick="toClick"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <Button android:id="@+id/btn_keymap_http" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Keymap http" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_keymap_write" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="car write" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_keymap_MARINE" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MARINE write" android:onClick="toClick"/>
+        </LinearLayout>
+        <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ID写入"/>
+        <LinearLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="center" android:id="@+id/num_1" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <EditText android:gravity="center" android:id="@+id/num_2" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <EditText android:gravity="center" android:id="@+id/num_3" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <EditText android:gravity="center" android:id="@+id/num_4" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <EditText android:gravity="center" android:id="@+id/num_5" android:layout_width="50dp" android:layout_height="wrap_content" android:maxLength="2" android:inputType="number"/>
+            <Button android:id="@+id/btn_write_id" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ID写入" android:onClick="toClick"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_search" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:onClick="toClick"/>
+            <Button android:id="@+id/btn_link" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接" android:onClick="toClick"/>
+            <TextView android:id="@+id/txt_link" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txt_search" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

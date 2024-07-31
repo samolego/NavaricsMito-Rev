@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="550dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="550dp" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No1:"/>
+            <EditText android:id="@+id/etNum1" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No2:"/>
+            <EditText android:id="@+id/etNum2" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No3:"/>
+            <EditText android:id="@+id/etNum3" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="550dp" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No4:"/>
+            <EditText android:id="@+id/etNum4" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No5:"/>
+            <EditText android:id="@+id/etNum5" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No6:"/>
+            <EditText android:id="@+id/etNum6" android:layout_width="40dp" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="550dp" android:layout_height="wrap_content">
+            <Button android:id="@+id/btnRestoreKeymap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Restore keymap"/>
+            <Button android:id="@+id/btnStopKeymap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stop keymap"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnRstMotorDriver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset Motor Driver"/>
+        <Button android:id="@+id/btnSendSizNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Send"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tvLongitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Longitude:"/>
+            <TextView android:id="@+id/tvLatitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Latitude:" android:layout_marginStart="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tvRSSI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RSSI:"/>
+            <TextView android:id="@+id/tvPER" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PER:" android:layout_marginStart="15dp"/>
+            <TextView android:id="@+id/tvSNR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SNR:" android:layout_marginStart="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btnTest1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x91"/>
+            <Button android:id="@+id/btnTest2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x92" android:layout_marginStart="5dp"/>
+            <Button android:id="@+id/btnTest3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x93" android:layout_marginStart="5dp"/>
+            <Button android:id="@+id/btnTest4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x94" android:layout_marginStart="5dp"/>
+            <Button android:id="@+id/btnTest5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x95" android:layout_marginStart="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

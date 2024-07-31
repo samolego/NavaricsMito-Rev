@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#252f40" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.navatics.app.widget.NvNumberPicker android:id="@+id/testPicker" android:layout_width="wrap_content" android:layout_height="300dp" android:layout_centerHorizontal="true" app:max="100" app:maxWidth="50dp" app:min="10" app:value="80"/>
+    <Button android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Scroll to 20" android:layout_alignParentBottom="true" android:layout_marginStart="10dp" android:layout_alignParentStart="true"/>
+    <Button android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Scroll to 80" android:layout_alignParentBottom="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.navatics.app.player.widget.media.IjkVideoView android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_pause" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_66" android:src="@drawable/media_vedio_3" android:scaleType="centerCrop"/>
+    </com.navatics.app.player.widget.media.IjkVideoView>
+    <RelativeLayout android:id="@+id/photoViewerNavigationBar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_centerVertical="true" android:layout_marginStart="29dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/ivDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete" android:scaleType="center"/>
+            <ImageView android:id="@+id/ivEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editor" android:scaleType="center" android:layout_marginStart="46dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/photoViewerEditorBar" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/ivOff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/off" android:layout_centerVertical="true" android:layout_marginStart="29dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/filter_shallow" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:layout_width="@dimen/dp_47" android:layout_height="@dimen/dp_47" android:src="@drawable/filter2"/>
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shallow_water"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/filter_deep" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_30">
+                <ImageView android:layout_width="@dimen/dp_47" android:layout_height="@dimen/dp_47" android:src="@drawable/filter1"/>
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deep_water"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/save_not_ok" android:layout_centerVertical="true" android:layout_marginEnd="19dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

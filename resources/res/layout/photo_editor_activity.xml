@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto" android:id="@+id/photoViewBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.navatics.p057cv.GLES3JNIView android:id="@+id/glImageContent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.navatics.app.widget.PinchImageView android:id="@+id/ivImageContent" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="matrix"/>
+    <RelativeLayout android:id="@+id/photoViewerEditorBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="64dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/ivOff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/off" android:layout_centerVertical="true" android:layout_marginStart="29dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/ivRotation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rotating" android:scaleType="center"/>
+            <ImageView android:id="@+id/ivFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/filter" android:scaleType="center" android:layout_marginStart="46dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/save_not_ok" android:layout_centerVertical="true" android:layout_marginEnd="19dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/photoViewFilterBar" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="88dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/ivFilterOff" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/off" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginStart="19dp" android:layout_alignParentStart="true"/>
+        <com.navatics.app.widget.MaxWidthRecyclerView android:id="@+id/filterList" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true" auto:maxWidth="155dp"/>
+        <ImageView android:id="@+id/ivFilterSave" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/save_not_ok" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginEnd="19dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/ext_ctrl_panel_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.navatics.app.widget.NvNumberPicker android:layout_gravity="center" android:id="@+id/shutterValuePicker" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="38dp" android:layout_marginBottom="38dp" app:maxWidth="38dp"/>
+</FrameLayout>

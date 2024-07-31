@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_background" android:padding="10dp" android:layout_width="@dimen/alert_width" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/custom_image" android:visibility="gone" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="5dp" android:scaleType="fitCenter" android:contentDescription="@string/app_name"/>
+    <FrameLayout android:id="@+id/error_frame" android:visibility="gone" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="5dp">
+        <View android:background="@drawable/error_circle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/error_x" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/error_center_x" android:scaleType="center" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/success_frame" android:visibility="gone" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="5dp">
+        <View android:background="@drawable/success_bow" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:layout_gravity="right" android:id="@+id/mask_right" android:background="@android:color/white" android:layout_width="35dp" android:layout_height="80dp" android:layout_marginTop="-13dp"/>
+        <View android:layout_gravity="left" android:id="@+id/mask_left" android:background="@android:color/white" android:layout_width="21dp" android:layout_height="60dp" android:layout_marginLeft="-3dp"/>
+        <View android:background="@drawable/success_circle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <cn.pedant.SweetAlert.SuccessTickView android:id="@+id/success_tick" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/warning_frame" android:visibility="gone" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="5dp">
+        <View android:background="@drawable/warning_circle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/warning_sigh" android:scaleType="center" android:contentDescription="@string/app_name"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/progress_dialog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@+id/progressWheel" android:layout_width="80dp" android:layout_height="80dp" wheel:progressIndeterminate="true"/>
+    </FrameLayout>
+    <TextView android:textSize="19sp" android:textColor="#575757" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/dialog_default_title" android:singleLine="true"/>
+    <TextView android:textSize="14sp" android:textColor="#797979" android:gravity="center" android:id="@+id/content_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAlignment="center"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <Button android:id="@+id/cancel_button" android:background="@drawable/gray_button_background" android:visibility="gone" android:layout_marginRight="10dp" android:text="@string/dialog_cancel" style="@style/dialog_blue_button"/>
+        <Button android:id="@+id/confirm_button" android:text="@string/dialog_ok" style="@style/dialog_blue_button"/>
+    </LinearLayout>
+</LinearLayout>

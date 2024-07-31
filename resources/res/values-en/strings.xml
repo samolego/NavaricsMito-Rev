@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Navatics</string>
+    <string name="btn_close_flashlight_text">Turn off the flashlight</string>
+    <string name="btn_open_flashlight_text">Turn on the flashlight</string>
+    <string name="btn_scan_local_pic">Selection of two-dimensional codes from albums</string>
+    <string name="help">Help</string>
+    <string name="quit">Out</string>
+    <string name="scan_fail">Scan failure!</string>
+    <string name="scan_prompt">Scanning the QR code on the\n products package</string>
+    <string name="settings">Settings</string>
+    <string name="string_help_text">Lack of necessary permissions at present。\n\nPlease click\"Settings\"-\"Jurisdiction\"-Open the required permissions。\nFinally click the two back button，you can return。</string>
+</resources>

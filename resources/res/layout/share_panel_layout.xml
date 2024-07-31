@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="209dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="54dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/ivFacebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/socail_share_facebook"/>
+        <ImageView android:id="@+id/ivTwitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/socail_share_twitter"/>
+        <ImageView android:id="@+id/tvInstagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/socail_share_instagram"/>
+        <ImageView android:id="@+id/ivWeChat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" app:srcCompat="@drawable/socail_share_wechat"/>
+    </LinearLayout>
+    <ImageButton android:id="@+id/btnCancel" android:background="@drawable/share_btn_btn_bg" android:layout_width="351dp" android:layout_height="46dp" android:layout_marginTop="55dp" android:src="@drawable/icon_alert_failed" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+    <View android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/btnCancel"/>
+</android.support.constraint.ConstraintLayout>

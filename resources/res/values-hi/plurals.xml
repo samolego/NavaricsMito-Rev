@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 घंटा</item>
+        <item quantity="other">%d घंटे</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 क्षण</item>
+        <item quantity="other">%d क्षण</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 पल</item>
+        <item quantity="other">%d पल</item>
+    </plurals>
+</resources>

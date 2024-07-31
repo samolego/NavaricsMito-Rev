@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:title="Developer Setting">
+    <SwitchPreference android:title="Enable Authentication" android:key="enableAuth" android:summary="Enable search-bind-connect-authenticate logic" android:defaultValue="com.navatics.robot.transport.ss:@bool/enable_auth" app:iconSpaceReserved="false"/>
+    <SwitchPreference android:title="Enable Auto Connect" android:key="enableAutoConn" android:summary="Enable auto connect to the last device that you connected to." android:defaultValue="com.navatics.robot.transport.ss:@bool/enable_auto_connect" app:iconSpaceReserved="false"/>
+    <SwitchPreference android:title="Enable Simulate SenseThink Api" android:key="enableSimulateSenseThinkApi" android:defaultValue="com.navatics.robot.transport.ss:@bool/enable_simulate_sensethink_api" app:iconSpaceReserved="false"/>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Simulate SenseThink API" android:key="simulateSenseThinkApiCategory">
+        <SwitchPreference android:title="Controller Bind Result" android:key="controllerBindResult" android:summary="Simulate the bind result for the controller activation" android:defaultValue="com.navatics.robot.transport.ss:@bool/controller_bind_result" app:iconSpaceReserved="false"/>
+        <SwitchPreference android:title="Roller Bind Result" android:key="rollerBindResult" android:summary="Simulate the bind result for the roller activation" android:defaultValue="com.navatics.robot.transport.ss:@bool/roller_bind_result" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/preferences_category" android:title="Other Setting">
+        <SwitchPreference android:title="Controller Auto Login" android:key="controllerAutoLogin" android:summary="Auto login when controller bind success" android:defaultValue="com.navatics.robot.transport.ss:@bool/controller_auto_login" app:iconSpaceReserved="false"/>
+        <SwitchPreference android:title="Roller Auto Login" android:key="rollerAutoLogin" android:summary="Auto login when roller bind success" android:defaultValue="com.navatics.robot.transport.ss:@bool/roller_auto_login" app:iconSpaceReserved="false"/>
+        <SwitchPreference android:title="Always Notify Search Result" android:key="alwaysNotifySearchResult" android:summary="Notify search result regardless the search result changed or not" android:defaultValue="com.navatics.robot.transport.ss:@bool/always_notify_search_result" app:iconSpaceReserved="false"/>
+        <SwitchPreference android:title="Use testing server" android:key="useTestingServer" android:summary="Use testing server, not the distribute one" android:defaultValue="com.navatics.robot.transport.ss:@bool/use_testing_server" app:iconSpaceReserved="false"/>
+        <SwitchPreference android:title="Use Network Update" android:key="useNetworkUpdate" android:summary="Use firmware from network to update the robot" android:defaultValue="com.navatics.robot.transport.ss:@bool/use_network_update" app:iconSpaceReserved="false"/>
+        <Preference android:title="Unbind" android:key="unbindFunction" app:iconSpaceReserved="false"/>
+        <Preference android:title="Get Robot Version" android:key="getRobotVersion" app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

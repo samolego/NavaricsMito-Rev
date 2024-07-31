@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/login_bg" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/tvLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56dp" android:src="@drawable/sign_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/txHelpText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37dp" android:text="@string/enter_the_verification_code_sent_to_your_email" android:layout_below="@+id/tvLogo" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/inputContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_below="@+id/txHelpText" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:gravity="center" android:id="@+id/etCode1" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:maxLength="1" android:digits="1234567890" android:inputType="phone"/>
+            <EditText android:gravity="center" android:id="@+id/etCode2" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:digits="1234567890" android:inputType="phone" android:layout_marginStart="9dp"/>
+            <EditText android:gravity="center" android:id="@+id/etCode3" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:digits="1234567890" android:inputType="phone" android:layout_marginStart="9dp"/>
+            <EditText android:gravity="center" android:id="@+id/etCode4" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:digits="1234567890" android:inputType="phone" android:layout_marginStart="9dp"/>
+            <EditText android:gravity="center" android:id="@+id/etCode5" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:digits="1234567890" android:inputType="phone" android:layout_marginStart="9dp"/>
+            <EditText android:gravity="center" android:id="@+id/etCode6" android:background="@drawable/login_email_box_bg" android:layout_width="44dp" android:layout_height="44dp" android:digits="1234567890" android:inputType="phone" android:layout_marginStart="9dp"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btnResend" android:background="@drawable/login_signin_btn_bg" android:layout_width="310dp" android:layout_height="44dp" android:layout_marginTop="23dp" android:text="@string/resend"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="#ff6cb0ff" android:id="@+id/tvCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="46dp" android:text="@string/cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

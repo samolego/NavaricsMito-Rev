@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.navatics.app.widget.DivelogSeekbar android:id="@+id/divelogSeekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" app:max="100" app:maxHeight="6dp" app:progress="30" app:progressDrawable="@drawable/divelog_seekbar_bg_test" app:thumb="@drawable/divelog_seekbar_thumb"/>
+</android.support.constraint.ConstraintLayout>

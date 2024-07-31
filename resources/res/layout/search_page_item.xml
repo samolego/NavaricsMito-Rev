@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+    <ImageView android:id="@+id/ivDeviceTypeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/mito_logo" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/deviceTypePicContainer" android:background="@drawable/search_page_item_bg_normal" android:layout_width="110dp" android:layout_height="90dp" android:layout_marginTop="12dp" android:layout_below="@+id/ivDeviceTypeName" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/ivDeviceTypePic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bind_buoy_icon" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="13sp" android:gravity="center" android:id="@+id/tvDeviceSN" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14sp" android:text="NSD55555555555555" android:layout_below="@+id/deviceTypePicContainer" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

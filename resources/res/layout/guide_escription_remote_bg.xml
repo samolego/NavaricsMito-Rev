@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:background="@drawable/description_remote" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_51" android:layout_marginTop="@dimen/dp_37" android:layout_marginRight="@dimen/dp_51" android:layout_marginBottom="@dimen/dp_37"/>
+</RelativeLayout>

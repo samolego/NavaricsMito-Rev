@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:src="@drawable/userinfo_back" android:layout_marginStart="10dp"/>
+    <ImageView android:id="@+id/ivUsrImg" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginTop="78dp" android:src="@drawable/usr_icon" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_000000" android:id="@+id/tvUsrName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Winson Li" android:layout_below="@+id/ivUsrImg" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/viewSeparator" android:background="#33000000" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="22dp" android:layout_below="@+id/tvUsrName"/>
+    <Button android:textColor="@color/white" android:id="@+id/btnSignOut" android:background="@drawable/usr_sign_out_btn_bg" android:layout_width="211dp" android:layout_height="36dp" android:layout_marginBottom="70dp" android:text="@string/sign_out" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:id="@+id/ll_edit_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/ivUsrImg" android:layout_centerHorizontal="true">
+        <include layout="@layout/dialog_update_username"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/cameraParamResPanel" android:background="@color/transparant20" android:layout_width="251dp" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivRes4k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:src="@drawable/res_3840x2160_background" android:layout_marginEnd="33dp" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/ivRes2k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:src="@drawable/res_2048x1536_background" android:layout_below="@+id/ivRes4k" android:layout_marginEnd="33dp" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/ivRes1080p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:src="@drawable/res_1920x1080_background" android:layout_below="@+id/ivRes2k" android:layout_marginEnd="33dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

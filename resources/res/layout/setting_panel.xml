@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/settingContainer" android:layout_width="519dp" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/settingContent" android:background="@color/white" android:layout_width="448dp" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/whiteGray" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/ivCloseSetting" android:background="@drawable/setting_right_panel_icon_bg" android:layout_width="match_parent" android:layout_height="71dp" android:src="@drawable/setting_off" android:scaleType="center"/>
+        <ImageView android:id="@+id/ivParametersSetting" android:background="@drawable/setting_right_panel_icon_bg" android:layout_width="match_parent" android:layout_height="71dp" android:src="@drawable/setting_parameter" android:scaleType="center"/>
+        <ImageView android:id="@+id/ivIMUSetting" android:background="@drawable/setting_right_panel_icon_bg" android:layout_width="match_parent" android:layout_height="71dp" android:src="@drawable/setting_imu" android:scaleType="center"/>
+        <ImageView android:id="@+id/ivDebugSetting" android:layout_width="match_parent" android:layout_height="71dp" android:scaleType="center"/>
+    </LinearLayout>
+</LinearLayout>

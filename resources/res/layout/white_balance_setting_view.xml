@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto" android:background="@drawable/ext_ctrl_panel_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.navatics.app.widget.xbar.XBar android:id="@+id/xbarWBManual" android:layout_width="wrap_content" android:layout_height="match_parent" auto:maxWidth="2dp" auto:minWidth="2dp" auto:progressDrawable="@drawable/p_mode_ev_progress" auto:tickMark="@drawable/wb_manual_seekbar_marker"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="40dp" android:layout_marginEnd="18dp" android:layout_toEndOf="@+id/xbarWBManual">
+        <ImageView android:id="@+id/ivWB_auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white_balance_auto_background"/>
+        <ImageView android:id="@+id/ivWB_manual" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/white_balance_manual_background"/>
+        <ImageView android:id="@+id/ivWB_sunny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/white_balance_sunny_background"/>
+        <ImageView android:id="@+id/ivWB_cloudy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/white_balance_cloudy_background"/>
+        <ImageView android:id="@+id/ivWB_warmlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/white_balance_warmlight_background"/>
+        <ImageView android:id="@+id/ivWB_coldlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:src="@drawable/white_balance_coldlight_background"/>
+    </LinearLayout>
+</RelativeLayout>

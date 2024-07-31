@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:id="@+id/titleContainer" android:layout_width="match_parent" android:layout_height="71dp" android:layout_alignParentTop="true">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/parameters_settings"/>
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@+id/btnResume" android:background="@drawable/parameter_setting_btn_resume_bg" android:layout_width="122dp" android:layout_height="36dp" android:layout_marginBottom="23dp" android:text="@string/reset" android:layout_alignParentBottom="true" android:layout_marginStart="83dp" android:layout_alignParentStart="true"/>
+    <Button android:textColor="@color/white" android:id="@+id/btnSave" android:background="@drawable/parameter_setting_btn_save_bg" android:layout_width="122dp" android:layout_height="36dp" android:layout_marginBottom="23dp" android:text="@string/save" android:layout_alignParentBottom="true" android:layout_marginStart="38dp" android:layout_toEndOf="@+id/btnResume"/>
+    <ImageView android:id="@+id/tvListIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="81dp" android:src="@drawable/parameters_setting_list_indicator" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ListView android:id="@+id/listParametersSetting" android:paddingTop="7dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="3dp" android:divider="#00000000" android:dividerHeight="30dp" android:layout_above="@+id/tvListIndicator" android:layout_below="@+id/titleContainer"/>
+</RelativeLayout>

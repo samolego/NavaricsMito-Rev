@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/settingEntryContainer" android:background="@drawable/settings_item_bg" android:layout_width="match_parent" android:layout_height="65dp">
+    <TextView android:textSize="18sp" android:textColor="@color/black" android:id="@+id/tvDisplayText" android:paddingRight="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Setting Text" android:layout_centerVertical="true" android:layout_marginStart="25dp"/>
+    <ImageView android:id="@+id/ivRightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/simple_setting_entry" android:layout_centerVertical="true" android:layout_marginEnd="21dp" android:layout_alignParentEnd="true"/>
+    <TextView android:textColor="#808b96" android:id="@+id/tvIndicatorText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Metric" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/ivRightArrow"/>
+</RelativeLayout>

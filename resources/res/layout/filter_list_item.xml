@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <ImageView android:id="@+id/filterImage" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/filter1"/>
+    <TextView android:textSize="10sp" android:id="@+id/filterTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

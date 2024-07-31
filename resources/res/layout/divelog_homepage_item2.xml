@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/divelog_homepage_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_17" android:layout_marginRight="@dimen/dp_7">
+    <TextView android:textSize="@dimen/sp_20" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="Nov 18th" android:layout_marginStart="38dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tvLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="27dp" android:text="Tulamben, Indonesia" android:layout_below="@+id/tvDate" android:layout_marginStart="38dp"/>
+    <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="00:00" android:layout_marginEnd="38dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

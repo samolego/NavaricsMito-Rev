@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.navatics.app.widget.PreviewLoadingOverlay xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/loadingOverlay" android:background="@color/transparant20" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.navatics.app.widget.avloading.AVLoadingIndicatorView android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorName="LineSpinFadeLoaderIndicator"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Loading..." android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</com.navatics.app.widget.PreviewLoadingOverlay>
