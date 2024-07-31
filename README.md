@@ -1,4 +1,4 @@
-# NavaricsMito-Rev
+# NavaticsMito-Rev
 
 A Jadx project for reversing Navatics Mito app, to perhaps get it working without unreachable Navatics servers ...
 
